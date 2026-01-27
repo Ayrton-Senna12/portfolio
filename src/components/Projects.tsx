@@ -69,11 +69,11 @@ const Projects = () => {
         </div>
 
         {/* Featured projects */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className="group glass-card p-6 hover-lift flex flex-col h-full"
+              className="group glass-card p-4 md:p-6 hover-lift flex flex-col h-full"
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
@@ -128,7 +128,7 @@ const Projects = () => {
         {/* Other projects */}
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-6 text-muted-foreground">Other Noteworthy Projects</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
             {otherProjects.map((project, index) => (
               <div
                 key={index}

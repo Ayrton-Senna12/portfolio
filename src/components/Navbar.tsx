@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-mono text-xl font-bold">
+          <a href="#" className="font-mono text-lg sm:text-xl font-bold">
             <span className="text-primary">{"<"}</span>
             EE
             <span className="text-primary">{" />"}</span>
@@ -71,12 +71,12 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
+          <div className="md:hidden mt-4 pb-4 space-y-2 animate-in slide-in-from-top-2 duration-200">
             {navLinks.map((link) => (
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left py-2 text-muted-foreground hover:text-primary transition-colors"
+                className="block w-full text-left py-2 px-2 text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-primary/10"
               >
                 {link.name}
               </button>

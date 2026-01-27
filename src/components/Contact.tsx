@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         {/* Contact card */}
-        <div className="glass-card p-8 md:p-12 text-center">
+        <div className="glass-card p-6 sm:p-8 md:p-12 text-center">
           <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
             <MapPin className="h-5 w-5 text-primary" />
             <span>İzmir, Türkiye</span>
@@ -30,11 +30,11 @@ const Contact = () => {
           {/* Email CTA */}
           <a
             href="mailto:emre2135samet@gmail.com"
-            className="group inline-flex items-center gap-3 text-2xl md:text-3xl font-semibold mb-8 hover:text-primary transition-colors"
+            className="group inline-flex items-center gap-2 md:gap-3 text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-8 hover:text-primary transition-colors break-all px-2"
           >
-            <Mail className="h-8 w-8" />
-            emre2135samet@gmail.com
-            <Send className="h-5 w-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+            <Mail className="h-6 w-6 md:h-8 md:w-8 flex-shrink-0" />
+            <span className="break-all">emre2135samet@gmail.com</span>
+            <Send className="h-4 w-4 md:h-5 md:w-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all flex-shrink-0" />
           </a>
 
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">

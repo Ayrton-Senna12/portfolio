@@ -40,20 +40,20 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text content */}
-          <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          <div className="space-y-4 md:space-y-6">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             I'm a software engineering student with a strong passion for building meaningful 
             and well-structured digital products. I have hands-on experience across 
             both frontend and backend development, and I enjoy turning complex problems into clean, efficient, 
             and user-friendly solutions.
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             My main interests include backend systems, artificial intelligence, and data-driven applications.
             I'm constantly learning new technologies, improving my problem-solving skills, 
             and working on projects that push my technical limits.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               When I'm not coding, you'll find me exploring new technologies, 
               contributing to open-source projects, or sharing knowledge through 
               technical writing and mentoring.
@@ -86,15 +86,15 @@ const About = () => {
           </div>
 
           {/* Highlights grid */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-3 md:gap-4">
             {highlights.map((item, index) => (
               <div 
                 key={index}
-                className="glass-card p-6 text-center hover-lift hover:border-primary/30 transition-colors"
+                className="glass-card p-4 md:p-6 text-center hover-lift hover:border-primary/30 transition-colors"
               >
-                <item.icon className="h-8 w-8 mx-auto mb-3 text-primary" />
-                <h3 className="text-2xl font-bold mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <item.icon className="h-6 w-6 md:h-8 md:w-8 mx-auto mb-2 md:mb-3 text-primary" />
+                <h3 className="text-lg md:text-2xl font-bold mb-1">{item.title}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground">{item.description}</p>
               </div>
             ))}
           </div>

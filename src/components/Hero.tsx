@@ -6,8 +6,8 @@ const Hero = () => {
     <section className="min-h-screen flex flex-col justify-center items-center relative px-6 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-accent/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
       </div>
 
       {/* Grid pattern */}
@@ -33,21 +33,21 @@ const Hero = () => {
         </div>
 
         {/* Terminal-style greeting */}
-        <div className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-8 fade-up fade-up-delay-1">
-          <span className="w-3 h-3 rounded-full bg-red-500/80" />
-          <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
-          <span className="w-3 h-3 rounded-full bg-green-500/80" />
-          <code className="font-mono text-sm text-muted-foreground ml-2">
+        <div className="inline-flex items-center gap-2 glass-card px-3 py-2 md:px-4 mb-8 fade-up fade-up-delay-1 max-w-full">
+          <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-red-500/80 flex-shrink-0" />
+          <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-yellow-500/80 flex-shrink-0" />
+          <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500/80 flex-shrink-0" />
+          <code className="font-mono text-xs md:text-sm text-muted-foreground ml-1 md:ml-2 truncate">
             ~/portfolio <span className="text-primary">$</span> whoami
           </code>
         </div>
 
         {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-up fade-up-delay-2">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 fade-up fade-up-delay-2 px-2">
           Hi, I'm <span className="gradient-text">Emre Eroğlu</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-4 fade-up fade-up-delay-3">
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-4 fade-up fade-up-delay-3 px-2">
           Full-Stack Developer & AI Engineer
         </p>
 

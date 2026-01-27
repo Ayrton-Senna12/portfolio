@@ -42,7 +42,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="group glass-card p-6 md:p-8 hover-lift hover:border-primary/50 transition-all duration-300"
+              className="group glass-card p-4 sm:p-6 md:p-8 hover-lift hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div className="flex-1">
@@ -52,20 +52,20 @@ const Experience = () => {
                       {exp.title}
                     </h3>
                   </div>
-                  <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-3">
+                  <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-2 sm:gap-4 text-muted-foreground mb-3">
                     <div className="flex items-center gap-1">
-                      <span className="font-semibold text-foreground">{exp.company}</span>
+                      <span className="font-semibold text-foreground text-sm md:text-base">{exp.company}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      <span>{exp.location}</span>
+                      <MapPin className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
+                      <span className="text-sm md:text-base">{exp.location}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{exp.period}</span>
+                      <Calendar className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
+                      <span className="text-sm md:text-base">{exp.period}</span>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4">
                     {exp.description}
                   </p>
                 </div>
